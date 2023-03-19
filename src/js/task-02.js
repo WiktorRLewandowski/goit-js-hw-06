@@ -1,8 +1,24 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
+
+const body = document.body;
+const heading = document.createElement("h1");
+const list = document.createElement("ul");
+
+heading.textContent = "Ingredients";
+
+ingredients.forEach((item) => {
+  let li = document.createElement("li");
+  li.innerText = item;
+  li.classList.add("item");
+  list.append(li);
+});
+
+body.append(heading);
+body.append(list);
