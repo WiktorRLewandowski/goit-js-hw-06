@@ -5,6 +5,8 @@ const ingredients = [
   "Tomatos",
   "Herbs",
   "Condiments",
+  "Omjon",
+  "Da sp00n",
 ];
 
 const body = document.body;
