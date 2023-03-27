@@ -11,7 +11,7 @@ const handleSubmit = (event) => {
     let message = `Fill the void inside those fields`;
     return alert(message);
   }
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  console.log({ Email: email.value, Password: password.value });
 
   event.currentTarget.reset();
 };

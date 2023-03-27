@@ -9,8 +9,9 @@ const createEl = document.querySelector("button[data-create]");
 const destroyEl = document.querySelector("button[data-destroy]");
 const boxesEl = document.getElementById("boxes");
 
-const createBoxes = () => {
-  for (let i = 0; i < inputEl.value; i++) {
+const createBoxes = (amount) => {
+  amount = inputEl.value;
+  for (let i = 0; i < amount; i++) {
     let size = 30;
     let div = document.createElement("div");
     div.style.backgroundColor = getRandomHexColor();
