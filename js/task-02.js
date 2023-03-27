@@ -10,10 +10,7 @@ const ingredients = [
 ];
 
 const body = document.body;
-const heading = document.createElement("h1");
-const list = document.createElement("ul");
-
-heading.textContent = "Ingredients";
+const list = document.getElementById("ingredients");
 
 ingredients.forEach((item) => {
   let li = document.createElement("li");
@@ -21,6 +18,3 @@ ingredients.forEach((item) => {
   li.classList.add("item");
   list.append(li);
 });
-
-body.append(heading);
-body.append(list);
