@@ -12,9 +12,11 @@ const ingredients = [
 const body = document.body;
 const list = document.getElementById("ingredients");
 
+let listElements = [];
 ingredients.forEach((item) => {
   let li = document.createElement("li");
   li.innerText = item;
   li.classList.add("item");
-  list.append(li);
+  listElements.push(li);
 });
+list.append(...listElements);
